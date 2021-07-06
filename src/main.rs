@@ -32,6 +32,11 @@ fn reveal(s: &mut Cursive) {
 }
 
 fn main() {
+    let title: String = std::env::args()
+        .skip(1)
+        .next()
+        .unwrap_or_else(|| "Password".to_string());
+
     let mut siv = cursive::default();
 
     let password: Arc<RefCell<Option<String>>> = Arc::new(RefCell::new(None));
@@ -47,7 +52,7 @@ fn main() {
         .with_name("passwd")
         .min_width(30);
 
-    siv.add_layer(Dialog::around(field).title("Cursive").with_name("dialog"));
+    siv.add_layer(Dialog::around(field).title(title).with_name("dialog"));
 
     obscure(&mut siv);
 
