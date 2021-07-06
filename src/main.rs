@@ -61,7 +61,6 @@ fn main() {
         }
         None => {
             exit(1);
-            // exit 1
         }
     }
 }
