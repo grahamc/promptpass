@@ -8,7 +8,7 @@ license = "MIT"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-cursive = "0.16.3"
+cursive = { git = "https://github.com/grahamc/cursive", rev = "7c3f31103201cd1e7a4c77ba323758800abf7882" }
+cursive_core = { git = "https://github.com/grahamc/cursive", rev = "7c3f31103201cd1e7a4c77ba323758800abf7882" }
 
-[patch.crates-io]
-cursive_core = { git = "https://github.com/grahamc/cursive", branch = "basic" }
+

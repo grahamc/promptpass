@@ -71,8 +71,7 @@ dependencies = [
 [[package]]
 name = "cursive"
 version = "0.16.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6593c3409eb794bf22090bec60dda1e19d1def284478bec7e5a92da3cf977c52"
+source = "git+https://github.com/grahamc/cursive?rev=7c3f31103201cd1e7a4c77ba323758800abf7882#7c3f31103201cd1e7a4c77ba323758800abf7882"
 dependencies = [
  "ahash",
  "cfg-if",
@@ -93,7 +92,7 @@ dependencies = [
 [[package]]
 name = "cursive_core"
 version = "0.2.2"
-source = "git+https://github.com/grahamc/cursive?branch=basic#7c3f31103201cd1e7a4c77ba323758800abf7882"
+source = "git+https://github.com/grahamc/cursive?rev=7c3f31103201cd1e7a4c77ba323758800abf7882#7c3f31103201cd1e7a4c77ba323758800abf7882"
 dependencies = [
  "ahash",
  "chrono",
@@ -198,9 +197,9 @@ checksum = "e2abad23fbc42b3700f2f279844dc832adb2b2eb069b2df918f455c4e18cc646"
 
 [[package]]
 name = "libc"
-version = "0.2.97"
+version = "0.2.98"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "12b8adadd720df158f4d70dfe7ccc6adb0472d7c55ca83445f6a5ab3e36f8fb6"
+checksum = "320cfe77175da3a483efed4bc0adc1968ca050b098ce4f2f1c13a56626128790"
 
 [[package]]
 name = "log"
@@ -326,6 +325,7 @@ name = "promptpass"
 version = "0.1.0"
 dependencies = [
  "cursive",
+ "cursive_core",
 ]
 
 [[package]]
