@@ -93,8 +93,7 @@ dependencies = [
 [[package]]
 name = "cursive_core"
 version = "0.2.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "025ac0bcd21ced752d27b70e6aa2285a3513d07b5a0c7f89e71121d20ca1429d"
+source = "git+https://github.com/grahamc/cursive?branch=basic#7c3f31103201cd1e7a4c77ba323758800abf7882"
 dependencies = [
  "ahash",
  "chrono",

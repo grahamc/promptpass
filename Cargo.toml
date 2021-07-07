@@ -10,3 +10,5 @@ license = "MIT"
 [dependencies]
 cursive = "0.16.3"
 
+[patch.crates-io]
+cursive_core = { git = "https://github.com/grahamc/cursive", branch = "basic" }
